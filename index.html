@@ -38,7 +38,7 @@
     <!-- DIV: contiene barra de navegación y carrusel de fotos -->
     <header>
         <!-- Barra de navegación, (tomada de Bootstrap), tiene fondo transparene y está encma del carrusel -->
-        <nav class="navbar fixed-top transparent navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-fixed-top transparent navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <img src="assets/img/viajes.svg" alt="" width="30px" class="mr-2">
                 <a class="navbar-brand" href="#">ViajesChile</a>
@@ -58,7 +58,7 @@
                             <a class="nav-link" href="#paseosdestacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contactanos">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -227,11 +227,61 @@
             </div>
         </section>
 
+        <section class="contacto container-fluid pb-3" id="contactanos">
+            <div class="mt-5 text-align-center justify-content-center">
+                <h2 class="font-weight-lighter text-align-center">Contacto</h2>
+                <hr>
+                <div class="text-align-center">
+                    <div class="typeform-widget" data-url="https://form.typeform.com/to/jkz09qwu?typeform-medium=embed-snippet"
+                        style="width: 60%; height: 28rem;">
+                    </div>
+                    <script>
+                        (function () {
+                            var qs, js, q, s,
+                                d = document,
+                                gi = d.getElementById,
+                                ce = d.createElement,
+                                gt = d.getElementsByTagName,
+                                id = "typef_orm",
+                                b = "https://embed.typeform.com/";
+
+                            if (!gi.call(d, id)) {
+                                js = ce.call(d, "script");
+                                js.id = id; js.src = b + "embed.js";
+                                q = gt.call(d, "script")[0];
+                                q.parentNode.insertBefore(js, q)
+                            }
+                        })()
+                    </script>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <footer>
+    <footer class="logofooter pt-2 ">
+        <div class="row justify-content-center text-align-center">
+            <div class="col-2">
+            </div>
 
+            <div class="col-3">
+                <h3 class="">VIAJES CHILE</h3>
+            </div>
+
+            <div class="col-2">
+            </div>
+
+            <div class="col-3">
+                <span><i class="fab fa-github"></i></span>
+                <span><i class="fab fa-linkedin"></i></span>
+                <span><i class="fab fa-twitter-square"></i></span>
+                <span><i class="fab fa-facebook-square"></i></span>
+            </div>
+
+            <div class="col-2">
+            </div>
+
+        </div>
     </footer>
 
 
@@ -246,6 +296,8 @@
     <!--Bootstrap JS 4.2.1-->
     <script src="assets/js/bootstrap.min.js"></script>
 
+    <!-- scripts javascript personales  -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
