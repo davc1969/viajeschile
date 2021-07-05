@@ -1,12 +1,5 @@
 
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-
-
+/* Clases generales para todo el documento */
 .text-align-center{
     text-align: center;
 }
@@ -15,7 +8,27 @@ html {
     text-align:left;
 }
 
+hr{
+    border-color: var(--primary);
+    border-top-width: 0.15rem;
+}
 
+.row{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width:100%;
+}
+
+.areaazul{
+    background-color: var(--primary);
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+
+/* Sección NAVBAR */
 .nav img{
     height: 10%;
     width: 10%;
@@ -35,12 +48,17 @@ html {
     transition: background-color 300ms linear;
 }
 
+.apagado{
 
+}
+
+/* Sección CARRUSEL */
 .carousel img{
     height: 46rem;
 }
 
 
+/* Sección QUIENES SOMOS */
 .somos{
     background-color: black;
     color: #fff;
@@ -48,28 +66,12 @@ html {
     padding-top: 5rem;
 }
 
-hr{
-    border-color: var(--primary);
-    border-top-width: 0.15rem;
-}
-
 .somos article{
     height: 28rem;
 }
-.row{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-width:100%;
-}
 
-.areaazul{
-    background-color: var(--primary);
-    padding: 0.25rem;
-    margin-bottom: 1rem;
-    font-size: 1.7rem;
-}
 
+/* Sección DESTACADOS */
 
 .destacados{
     background-color: black;
@@ -77,8 +79,6 @@ hr{
     font-weight: 100;
     padding-top: 2rem;
 }
-
-
 
 .card{
     height: 33rem;
@@ -91,17 +91,32 @@ hr{
     height: 193px;
 }
 
+.card img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Sección CONTACTO */
 .contacto{
     background-color: black;
     color: #fff;
     font-weight: 100;
     padding-top: 4rem;
+    float: none;
 }
 
 .typeform-widget{
     text-align: center;
 }
 
+.typeform_size{
+    width: 60%; 
+    height: 500px; 
+    margin:auto;
+}
+
+
+/* FOOTER */
 .logofooter{
     bottom: 0;
     background-color: var(--primary);
@@ -109,14 +124,36 @@ hr{
     height: 4rem;
 }
 
-footer span{
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    margin-top: 0rem;
-    font-size: 2rem;
+footer a{
+    text-decoration: none;
+    color: white;
+    margin: auto;
 }
+
 
 footer h3{
     margin-bottom: 0;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
+}
+
+
+
+
+
+/*  Meedia Query para modificar aspectos en version movil */
+@media (max-width: 576px){
+
+    .typeform_size{
+        width: 100%; 
+        height: 250px; 
+        margin:auto;
+    }
+
+    .carousel img{
+        height: 20rem;
+    }
+
+    .apagado{
+        pointer-events: none;
+    }
 }

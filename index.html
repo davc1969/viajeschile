@@ -52,7 +52,7 @@
                             <a class="nav-link" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#quienessomos">Quiénes somos</a>
+                            <a class="nav-link d-none d-md-block" href="#quienessomos">Quiénes somos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#paseosdestacados">Destacados</a>
@@ -171,12 +171,13 @@
             </div>
         </section>
 
+        <!-- Sección DESTACADOS, se utilizaron CARDS de Bootstrap -->
         <section class="destacados container-fluid" id="paseosdestacados">
             <div class="mt-5 text-align-center justify-content-around">
                 <h2 class="font-weight-lighter text-align-center">Destacados</h2>
                 <hr>
                 <div class="row container justify-content-around mt-5">
-                    <article class="col-3">
+                    <article class="col-12 col-sm-3">
                         <div class="card areaazul">
                             <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
                             <div class="card-body ">
@@ -188,7 +189,7 @@
                         </div>
                     </article>
 
-                    <article class="col-3">
+                    <article class="col-12 col-sm-3">
                         <div class="card areaazul">
                             <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
                             <div class="card-body ">
@@ -200,7 +201,7 @@
                         </div>
                     </article>
 
-                    <article class="col-3">
+                    <article class="col-12 col-sm-3">
                         <div class="card areaazul">
                             <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
                             <div class="card-body ">
@@ -212,7 +213,7 @@
                         </div>
                     </article>
 
-                    <article class="col-3">
+                    <article class="col-12 col-sm-3">
                         <div class="card areaazul">
                             <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
                             <div class="card-body ">
@@ -227,61 +228,64 @@
             </div>
         </section>
 
-        <section class="contacto container-fluid pb-3" id="contactanos">
-            <div class="mt-5 text-align-center justify-content-center">
-                <h2 class="font-weight-lighter text-align-center">Contacto</h2>
+        <!-- Sección de contacto, se uso forma de Typeform, también está de manera responsiva -->
+        <section class="container-fluid text-center contacto py-5" id="contactanos">
+            <div>
+                <h1>Contacto</h1>
                 <hr>
-                <div class="text-align-center">
-                    <div class="typeform-widget" data-url="https://form.typeform.com/to/jkz09qwu?typeform-medium=embed-snippet"
-                        style="width: 60%; height: 28rem;">
-                    </div>
-                    <script>
-                        (function () {
-                            var qs, js, q, s,
-                                d = document,
-                                gi = d.getElementById,
-                                ce = d.createElement,
-                                gt = d.getElementsByTagName,
-                                id = "typef_orm",
-                                b = "https://embed.typeform.com/";
+            </div>
 
-                            if (!gi.call(d, id)) {
-                                js = ce.call(d, "script");
-                                js.id = id; js.src = b + "embed.js";
-                                q = gt.call(d, "script")[0];
-                                q.parentNode.insertBefore(js, q)
-                            }
-                        })()
-                    </script>
-                </div>
+            <div>
+                <div class="typeform-widget typeform_size" data-url="https://form.typeform.com/to/jkz09qwu?typeform-medium=embed-snippet" >
+                </div> 
+                <script> 
+                    (function () 
+                        { var qs, js, q, s, 
+                                d = document, 
+                                gi = d.getElementById, 
+                                ce = d.createElement, 
+                                gt = d.getElementsByTagName, 
+                                id = "typef_orm", 
+                                b = "https://embed.typeform.com/"; 
+                        if (!gi.call(d, id)) { 
+                            js = ce.call(d, "script"); 
+                            js.id = id; 
+                            js.src = b + "embed.js"; 
+                            q = gt.call(d, "script")[0]; 
+                            q.parentNode.insertBefore(js, q) 
+                        } 
+                    })()
+                </script>
+
             </div>
         </section>
 
     </main>
 
-    <footer class="logofooter pt-2 ">
-        <div class="row justify-content-center text-align-center">
-            <div class="col-2">
+        <!-- Footer, incluye nombre e iconos de redes sociales -->
+    <footer class="text-center py-5 bg-primary text-white">
+        <div class="row container m-auto">
+            <div class="col-12 col-sm-6">
+                <h1>VIAJES CHILE</h1>
             </div>
 
-            <div class="col-3">
-                <h3 class="">VIAJES CHILE</h3>
-            </div>
-
-            <div class="col-2">
-            </div>
-
-            <div class="col-3">
-                <span><i class="fab fa-github"></i></span>
-                <span><i class="fab fa-linkedin"></i></span>
-                <span><i class="fab fa-twitter-square"></i></span>
-                <span><i class="fab fa-facebook-square"></i></span>
-            </div>
-
-            <div class="col-2">
+            <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                <a href="https://github.com/davc1969">
+                    <i class="fab fa-github fa-3x mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dariovalenzuelac">
+                    <i class="fab fa-linkedin fa-3x mx-2"></i>
+                </a>
+                <a href="https://twitter.com/davc1969">
+                    <i class="fab fa-twitter-square fa-3x mx-2"></i>
+                </a>
+                <a href="https://www.facebook.com/davc1969">
+                    <i class="fab fa-facebook-square fa-3x mx-2"></i>
+                </a>
             </div>
 
         </div>
+
     </footer>
 
 
